@@ -1,0 +1,55 @@
+================================================================================
+HOUSE PRICE PREDICTION - MODEL EVALUATION REPORT
+Generated: 2025-07-02 11:32:27
+================================================================================
+
+SUMMARY STATISTICS
+----------------------------------------
+Total models evaluated: 13
+Best MAE: €66,538
+Worst MAE: €96,392
+Average MAE: €78,194
+
+MODEL RANKINGS BY MAE
+----------------------------------------
+Rank  Model                         MAE (€)        R²        Time (s)  
+----------------------------------------------------------------------
+1     XGBoost                       €66,538        0.697     0.24      
+2     LightGBM                      €67,227        0.693     0.28      
+3     Gradient Boosting             €68,389        0.684     9.54      
+4     CatBoost                      €71,357        0.658     0.80      
+5     Random Forest                 €74,183        0.630     1.58      
+6     Extra Trees                   €77,456        0.608     1.10      
+7     Decision Tree                 €78,727        0.583     0.21      
+8     KNN-5                         €80,648        0.538     0.01      
+9     KNN-10                        €81,749        0.537     0.01      
+10    Linear Regression             €84,618        0.538     0.04      
+11    Ridge Regression              €84,619        0.538     0.03      
+12    Bayesian Ridge                €84,620        0.538     0.06      
+13    AdaBoost                      €96,392        0.444     2.19      
+
+
+MODEL CATEGORY ANALYSIS
+----------------------------------------
+
+Linear Models:
+  Count: 3
+  Best MAE: €84,618
+  Average MAE: €84,619
+
+Tree-based Models:
+  Count: 5
+  Best MAE: €68,389
+  Average MAE: €79,029
+
+Advanced Models:
+  Count: 3
+  Best MAE: €66,538
+  Average MAE: €68,374
+
+Other Models:
+  Count: 2
+  Best MAE: €80,648
+  Average MAE: €81,198
+
+================================================================================

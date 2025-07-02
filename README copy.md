@@ -1,29 +1,29 @@
 ==== Machine Learning Models====
 
-Descrption 
+Description 
 
-The project work appoaches various machine to evaluate the price of real estates
-five models have been utilized to examine their accuracy and to select the best Model
-Thse include:
+The project work has approached various machine models to evaluate the price of real estates.
+Five models have been utilized to examine their accuracy and to select the best Model
+These include:
   - Linear regression 
   - Random Forest Regression 
-  - Gradien Boost tegression 
-  - Cat Boost Regresson 
+  - Gradient Boost Regression 
+  - Cat Boost Regression 
   - xg Boost Regression 
   - 
 -------------------------------------------------------------------------------
 Dataset
 
-Dataset was taken from ImmoEliza through Immoweb scaping
-the Data is found at data/dataset_wout_price_outlierscsv
+A Dataset was taken from ImmoEliza through Immoweb scapying.
+The Dataset is found at data/dataset_wout_price_outlierscsv
 
 
 Installation
 
-To run this python code you an follow these few procedure 
+To run this python code, you have to follow these few procedures: 
 
    -clone this repository from https://github.com/Cloris-la/challenge-regression.git
-   - install the reuirement.txt file through
+   - install the requirement.txt file through
    
         pip install -r requirements.txt 
 
@@ -39,9 +39,9 @@ To run this python code you an follow these few procedure
 
 Usage
 
-These machine learning modes to accomadiate maltivaribale functions use the sklearn library. 
-The price (tagret) contains determoinant variables of which some are continuous and others are 
-categorical variables. Therefor, preprocessing data was carried out using standardScaler.
+These machine learning modes use the scikit learn python library to accommodate multivariable functions. 
+The price (the target variable) contains determinant variables of which some are continuous and others are 
+categorical. Therefore, preprocessing data was carried out using standard Scaler.
 
         from sklearn.preprocessing import StandardScaler
         df= pd.read_csv('data/dataset_wout_price_outliers.csv')
@@ -51,9 +51,9 @@ categorical variables. Therefor, preprocessing data was carried out using standa
             df_prepro[col] = StandardScaler().fit_transform(np.array(df_prepro[col]).reshape(-1, 1))
         df_LR= df_prepro
  
- This way, the models prediction accuracy was imporved. Here an example of illustrating how to use it.
+ This way, the model prediction accuracy was improved. Here is an inference to illustrate how to use it.
 
-    # calling important libraries and methonds
+    # calling important libraries and methods
 
     from sklearn.model_selection import train_test_split
     from sklearn.linear_model import LinearRegression
@@ -87,9 +87,9 @@ categorical variables. Therefor, preprocessing data was carried out using standa
 
 Visuals
 
-The model predictions were also ploted to have a visual control on the pattern.
-The Matplotlib is used to show the patters on the test and the predict values. Here 
-is how the plot code produced. 
+The model predictions were also plotted to have visual control over the patterns.
+The Matplotlib is used to visualize the patterns on the test and the predicted values. Here 
+is how the plot code is produced. 
 ---------------------------------------------
         plt.figure(figsize=(8, 8))
         plt.scatter(y_test, y_pred, alpha=0.5, color='blue', label='Predicted vs Actual')
@@ -104,15 +104,14 @@ is how the plot code produced.
 
 Contributors
 
-Four persons were participated in the project work: Hanieh, Estifania, Fang, and Mengstu. After data preprocessing, indiviual person hase developed his own code to run these five models and finally combined the files into one py code file named main.py.
+Four persons have participated in the project work: Hanieh, Estifania, Fang, and Mengstu. After data preprocessing, every person developed his code to run these five models and finally combined the files into one py code file named main.py.
 
 
 Timeline
-This project was a five day challenge work.The first day was dedicated for data preprocess and remaining for the code development 
-and mpodel validation, documentation and presentation.
+
+This project was a five-day challenge work. The first day was dedicated to data preprocessing and the remaining for the code development and validation, documentation, and presentation.
 
 Personal situation
 
-We worked this project work to deepen our understanding as a Ai data science trainees and have learned alot in using the various
-machine learning models. 
+We have participated in this project to deepen our understanding in machine learning. As AI data science trainees, we have learned a lot in using the various machine learning models. 
 
